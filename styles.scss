@@ -1,0 +1,77 @@
+/* Colors */
+$green: #e6ffcc;
+$grey:  #e6e6e6;
+$red: #cc0000;
+$darktan: #666633;
+$tan: #c3c388;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: $grey;
+  position: relative;
+  min-height: 100vh;
+}
+.calculator {
+  border: 1px solid darken($tan, 10);
+  width: 350px;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 30px 10px 30px 10px;
+  background-color: $tan;
+  box-shadow: inset 0 8px 15px 0 darken($tan, 20)
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+input {
+  border-radius: 5px;
+  line-height: 40px;
+  font-size: 2em;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px 0 10px;
+  font-weight: 600;
+  text-direction: rtl;
+  text-align: right;
+  background-color: $green;
+  border: 1px solid lighten($darktan, 8);
+  box-shadow: inset 3px 3px 6px -3px lighten($darktan, 8);
+}
+.row button {
+  width: 60px;
+  height: 40px;
+  margin: 8px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: white;
+  box-shadow: 0 4px 8px 0 #999999;
+  background-color: $darktan;
+  border: 1px solid darken($darktan, 10);
+}
+.row button:focus {
+  outline: none;
+}
+button:active {
+  background-color: darken($darktan, 15);
+  box-shadow: 0 4px 8px 0 #808080;
+}
+#red {
+  background-color: $red;
+  border: 1px solid darken($red, 10);
+}
+#red:active {
+  background-color: darken($red, 15);
+}
+
+footer {
+  bottom: 2px;
+  left: 0;
+  text-align: left;
+  color: black;
+  position: absolute;
+}
+
